@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Stopwatch</title>
+  </head>
+  <body>
+    <div class="main">
+      <div id="timer">00:00:00</div>
+      <div id="millisecondsContainer">
+        <span id="milliseconds">.00</span>
+      </div>
+    </div>
+    <button id="startButton" onclick="startStopwatch()">Start</button>
+    <button id="stopButton" onclick="stopResumeStopwatch()" disabled>
+      Stop
+    </button>
+    <button id="resetButton" onclick="resetStopwatch()" disabled>Reset</button>
+    <button class="lapButton" id="lapButton" onclick="recordLap()" disabled>
+      Lap
+    </button>
+    <button id="shareButton" onclick="shareTimes()" disabled>
+      Share Times
+    </button>
+    <div id="lapHistory">
+      <h2>Lap History</h2>
+      <ul id="lapHistoryList"></ul>
+    </div>
+    <script src="./script.js"></script>
+    </body>
+</html>
